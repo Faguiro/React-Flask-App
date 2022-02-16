@@ -1,16 +1,16 @@
-## dependêcias:
+## Dependêcias:
 ```
 node =>14
 python => 3.8
 yarn
 ```
-## front-end:
+## Front-end:
 ```
 Na pasta raiz:
 npm install
 yarn start
 ```
-## back-end:
+## Back-end:
 ```
 Na pasta api
 pip istall -r requeriments.txt
