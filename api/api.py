@@ -1,9 +1,22 @@
-import time
 from flask import Flask
+from time import time, ctime, strftime, localtime
+import locale
+locale.setlocale(locale.LC_TIME, 'pt_br')
+app = Flask(__name__, static_folder='../build', static_url_path='/')
 
-app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
 
 
-@app.route('/time')
+@app.route('/api/time')
 def get_current_time():
-    return {'time': time.time()}
+    t = time()
+    return {'time': strftime('%c', localtime())}
+    return {'time': ctime(t)}
+
+
+@app.route('/api/content')
+def content():
+    return {'content': 'https://www.linkedin.com/in/faguiro/'}
