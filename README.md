@@ -12,7 +12,7 @@ yarn start
 ```
 ## back-end:
 ```
-na pasta api
+Na pasta api
 pip istall -r requeriments.txt
 yarn start-api  ou yarn start api-wsl (linux)
 ```
