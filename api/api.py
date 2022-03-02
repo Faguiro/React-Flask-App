@@ -20,3 +20,7 @@ def get_current_time():
 @app.route('/api/content')
 def content():
     return {'content': 'https://www.linkedin.com/in/faguiro/'}
+
+
+if __name__ == "__main__":
+    app.run()
