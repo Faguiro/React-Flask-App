@@ -6,7 +6,7 @@ function App() {
   const [currentTime, setCurrentTime] = useState(0);
   const [string, str] = useState(0);
   useEffect(() => {
-    fetch('/time')
+    fetch('https://api-backend-flak.herokuapp.com/time', { mode: 'cors' })
       .then(res => res.json())
       .then(data => {
         setCurrentTime(data.time);
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>React🤖 + flask🐍 App📲</p>
+        <p>React🤖 + Flask🐍 App📲</p>
         <p>Esta é a data atual: {currentTime}.</p>
         <p>{str}</p>
       </header>
