@@ -1,7 +1,7 @@
-<h4 align="center"> 
+<h2 align="center"> 
 	🚧   projeto que combina um frontend React com um backend Flask . 🚀 Em construção...  🚧
 	
-</h4>
+</h2>
 
 ## Dependêcias:
 
