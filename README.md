@@ -1,5 +1,6 @@
 <h4 align="center"> 
-	🚧  Projeto 🚀 Em construção...  🚧
+	🚧   projeto que combina um frontend React com um backend Flask . 🚀 Em construção...  🚧
+	
 </h4>
 
 ## Dependêcias:
@@ -40,3 +41,5 @@ yarn start-api
 ``` 
 yarn start api-wsl 
 ```
+## Deploy no HEROKU:
+### https://taskappication.herokuapp.com/
